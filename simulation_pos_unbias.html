@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Clamper Circuits - Simulation</title>
+</head>
+<body>
+    <header>
+        <div class="college_logo_name">
+            <img src="TCE_logo.png" alt="Logo" height="50px">
+            <h2>Thiagarajar College of Engineering</h2>
+        </div>
+        
+        <div class="heading_virtual_labs">
+            <h1>EEE Virtual Lab</h1>
+        </div>
+
+        <div class="nav_links">
+            <li>
+                <ul><a href="#">Home</a></ul>
+                <ul><a href="#">About TCE</a></ul>
+                <ul><a href="#">Contact</a></ul>
+                <ul><a href="#">Login</a></ul>
+            </li>
+        </div>
+        
+    </header>
+
+    <section class="main_section">
+        <div class="title">
+            <h1>
+                Study of Clamper Circuits
+            </h1>
+        </div>
+        <div class="main_div">
+            <div class="navigation">
+                <li>
+                    <ul><a href="index.html">Aim</a></ul>
+                    <ul><a href="#">Theory</a></ul>
+                    <ul><a href="#">Pre-Quiz</a></ul>
+                    <ul><a href="#">Circuit Design</a></ul>
+                    <ul><a href="simulation_pos_unbias.html" id="current_link">Simulation</a></ul>
+                    <ul><a href="#">Post-Quiz</a></ul>
+                    <ul><a href="#">Applications</a></ul>
+                    <ul><a href="#">Feedback</a></ul>
+                </li>
+            </div>
+
+            <div class="workspace">
+                <div class="left">
+                    
+                    <div class="circuit_specifications">
+                        <div class="choose_circuit_type">
+                            <div class="choose_sentence">
+                                <h3>Choose the type of clamper: </h3>
+                            </div>
+                            <div class="choices_of_circuits">
+                                <h3><a href="#">Biased Clamper</a>&nbsp; or &nbsp;<a href="#" class="selected_currently">Unbiased Clamper</a></h3>
+                                <h3><a href="#" class="selected_currently">Positive Clamper</a>&nbsp; or &nbsp;<a href="#">Negative Clamper</a></h3>
+                            </div>
+                        </div>
+
+                        <div class="circuit_design">
+                            <div class="choose_ratings">
+                                <h3>Choose Components and Ratings</h3>
+                                <h4>Diode</h4>
+                                <h4>Capacitor</h4>
+                                <h4>Resistor</h4>
+                                <h4>Supply voltage</h4>
+                                <h4>Bias Voltage: </h4>
+                            </div>
+                            <div class="check_design">
+                                <h5>The circuit design is correct/incorrect. If incorrect, the explanation is given here</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    <div class="circuit_diagram">
+                        <div class="diagram" id="diagram">
+                            <img src="images/Pos_unbiased_clamper/Circuit_pics/Slide1.JPG" alt="">
+
+                        </div>
+                        <div class="three_buttons">
+                            <button class="reset btn" onclick="resetToOne()">Reset</button>
+                            <button class="prev btn" onclick="decrementStep()">Prev.</button>
+                            <button class="next btn" id="next_btn" onclick="incrementStep()">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    
+                    <div class="output_dashboard">
+                        <div class="dashboard_name">
+                            <h2>Output Dashboard</h2>
+                        </div>
+                        <div class="output_voltage_display">
+                            <div class="avg_v">
+                                <h5>Average voltage: <span id="count">1</span></h5>
+                            </div>
+                            <div class="rms_v">
+                                <h5>RMS Voltage: <span>5V</span></h5>
+                            </div>
+                        </div>
+                        
+                        <div class="output_waveform">
+                            <h2>Output Waveform</h2>
+                            <img src="images/Pos_unbiased_clamper/Graph_pics/Slide1.JPG" alt="" id="output_graph">
+                        </div>
+                    </div>
+                    
+
+                    <div class="explanation" id="explanation">
+                        <h2>Click "Next" button is begin! </h2>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
