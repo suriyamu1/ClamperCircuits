@@ -63,17 +63,13 @@ function change_Circuit_Graph_Explanation() {
 function validate() 
 {
     console.log("validate function is called.");
-    var input_v = document.getElementById("V_in");
+    var input_v_value = document.getElementById("V_in").value;
+    var  bias_v_value = document.getElementById("bias_v").value;
+    var res_val = document.getElementById("resistance").value;
 
-    if(input_v.value == "" || input_v.value==null || input_v.value==NaN) {
-        document.getElementById("check_design").innerHTML = "<h5>Enter the input voltage value.</h5>"; 
+
+
+    if(input_v_value.value == "" || bias_v_value == "" || res_val == "") {
+        document.getElementById("check_design").innerHTML = "<h5>Fill all the entries.</h5>"; 
     }
-
-    var bias_v = document.getElementById("Bias_voltage");
-    if(bias_v.value == "" || bias_v.value==null || bias_v.value == NaN) {
-        document.getElementById("check_design").innerHTML = "<h5>Enter the bias voltage value.</h5>"; 
-        return;
-    }
-
-    
 }

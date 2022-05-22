@@ -311,7 +311,7 @@ body .main_section .main_div .workspace .left .circuit_specifications .circuit_d
   width: 55%;
 }
 
-body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form .inputs_from_user input[type=text], body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form .inputs_from_user select {
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form .inputs_from_user input[type=number], body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form .inputs_from_user select {
   width: 40%;
   padding: 0px 2px;
   margin: 1px 0;
