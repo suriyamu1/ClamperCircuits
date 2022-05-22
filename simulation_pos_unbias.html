@@ -65,14 +65,50 @@
 
                         <div class="circuit_design">
                             <div class="choose_ratings">
-                                <h3>Choose Components and Ratings</h3>
-                                <h4>Diode</h4>
+                                <h3>Choose Components and Ratings:</h3>
+                                <!-- <h4>Diode</h4>
                                 <h4>Capacitor</h4>
                                 <h4>Resistor</h4>
                                 <h4>Supply voltage</h4>
-                                <h4>Bias Voltage: </h4>
+                                <h4>Bias Voltage: </h4> -->
+                                <form>
+                                    <div class="inputs_from_user">
+                                        <label>Input Voltage:</label>
+                                        <input type="text" id="V_in">
+                                        <br>
+    
+                                        <label>Biasing Voltage:</label>
+                                        <input type="text" name="" id="" size="4">
+                                        <br>
+    
+                                        <label>Diode:</label>
+                                        <select>
+                                            <option>1n4007</option>
+                                            <option>Power</option>
+                                        </select>
+                                        <br>
+    
+                                        <label>Resistor:</label>
+                                        <input type="text" name="" id="" size="4">
+                                        <br>
+    
+                                        <label>Capacitor:</label>
+                                        <select>
+                                            <option>0.1 uF</option>
+                                            <option>0.3 pF</option>
+                                        </select>
+                                        <br>
+                                    </div>
+                                    
+                                    <div class="buttonsDiv">
+                                        <button type="reset">Reset</button>
+                                        <button type="button" onclick="validate()">Verify</button>
+                                    </div>
+                                    
+
+                                </form>
                             </div>
-                            <div class="check_design">
+                            <div class="check_design" id="check_design">
                                 <h5>The circuit design is correct/incorrect. If incorrect, the explanation is given here</h5>
                             </div>
                         </div>

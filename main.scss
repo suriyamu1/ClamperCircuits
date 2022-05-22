@@ -182,13 +182,14 @@ body {
 
                 .left {
                     // border: 1px solid black;
-                    margin-top: 20px;
+                    margin-top: 15px;
                     // height: 100%;
                     width: 90%;
 
                     .circuit_specifications {
-                        margin: 0% 9%;
+                        margin: 0% 6%;
                         .choose_circuit_type {
+                            font-size: 0.9rem;
                             display: flex;
                             justify-content: space-evenly;
                             // border: 1px solid black;
@@ -196,7 +197,7 @@ body {
                             background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
                             box-shadow:  7px 7px 12px #666666,
                              -7px -7px 12px #ffffff;
-                            padding: 10px 20px;
+                            padding: 5px 20px;
     
                             .choose_sentence {
                                 align-self: center;
@@ -236,8 +237,54 @@ body {
                                 padding: 10px 15px;
     
                                 h3 {
-                                    color: #00008b;
-                                    text-decoration: underline;
+                                    color: #000;
+                                    // font-style: italic;
+                                }
+
+                                form {
+                                    
+                                    display: flex;
+                                    flex-direction: column;
+                                    // background-color: lightblue;
+                                    border-radius: 10px;
+                                    padding: 0px 10px;
+                                    padding-top: 3px;
+
+                                    .inputs_from_user {
+
+                                        label {
+                                            font-size: 0.9rem;
+                                            color: blue;
+                                            font-weight: 800;
+                                            display: inline-block;  //to set the width of an inline element
+                                            width: 55%;
+                                        }
+    
+                                        input[type=text], select {
+                                            width: 40%;
+                                            padding: 0px 2px;
+                                            margin: 1px 0;   // spacing between various input entries
+                                            // display: inline-block;
+                                            border: 1px solid #ccc;
+                                            border-radius: 4px;
+                                            // box-sizing: border-box;
+                                            font-size: 13px;
+                                        }
+                                    }
+
+                                    .buttonsDiv {
+                                        margin-top: 5px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;
+                                        
+                                        button {
+                                            display: inline-block;
+                                            width: 45%;
+                                            font-size: 14px;
+                                        }
+                                    }
                                 }
                             }
     
@@ -260,7 +307,7 @@ body {
 
                     .circuit_diagram {
                         // border: 1px solid black;
-                        margin-top: 30px;
+                        margin-top: 15px;
                         margin-bottom: 10px;
                         display: flex;
                         flex-direction: column;

@@ -222,15 +222,16 @@ body .main_section .main_div .workspace {
 }
 
 body .main_section .main_div .workspace .left {
-  margin-top: 20px;
+  margin-top: 15px;
   width: 90%;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications {
-  margin: 0% 9%;
+  margin: 0% 6%;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type {
+  font-size: 0.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,7 +242,7 @@ body .main_section .main_div .workspace .left .circuit_specifications .choose_ci
   background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
   -webkit-box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
           box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choose_sentence {
@@ -286,8 +287,60 @@ body .main_section .main_div .workspace .left .circuit_specifications .circuit_d
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings h3 {
-  color: #00008b;
-  text-decoration: underline;
+  color: #000;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  padding: 0px 10px;
+  padding-top: 3px;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form .inputs_from_user label {
+  font-size: 0.9rem;
+  color: blue;
+  font-weight: 800;
+  display: inline-block;
+  width: 55%;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form .inputs_from_user input[type=text], body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form .inputs_from_user select {
+  width: 40%;
+  padding: 0px 2px;
+  margin: 1px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form .buttonsDiv {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings form .buttonsDiv button {
+  display: inline-block;
+  width: 45%;
+  font-size: 14px;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .check_design {
@@ -302,7 +355,7 @@ body .main_section .main_div .workspace .left .circuit_specifications .circuit_d
 }
 
 body .main_section .main_div .workspace .left .circuit_diagram {
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
