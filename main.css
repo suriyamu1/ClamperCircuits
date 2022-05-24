@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,14 +24,14 @@ body header {
 }
 
 body header .college_logo_name {
-  width: 27%;
+  width: 30%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -42,17 +44,17 @@ body header .college_logo_name img {
 body header .college_logo_name h2 {
   font-weight: 700;
   margin-left: 5px;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 body header .heading_virtual_labs h1 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   letter-spacing: 1.5px;
   word-spacing: 3px;
 }
 
 body header .nav_links {
-  width: 27%;
+  width: 30%;
 }
 
 body header .nav_links li {
@@ -63,8 +65,9 @@ body header .nav_links li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -77,18 +80,19 @@ body header .nav_links li ul {
 body header .nav_links li ul a {
   text-decoration: none;
   color: white;
-  padding: 5px 10px;
+  padding: 5px 8px;
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   letter-spacing: 1px;
-  font-weight: 900;
+  font-weight: 600;
+  font-size: 0.95rem;
   border-radius: 15px;
+  font-family: 'Crimson Pro', serif;
 }
 
 body .main_section {
   height: 89vh;
-  max-height: 88vh;
-  overflow: hidden;
+  min-height: 90vh;
 }
 
 body .main_section .title {
@@ -97,8 +101,8 @@ body .main_section .title {
 }
 
 body .main_section .title h1 {
-  font-size: 1.5rem;
-  padding: 7px 0px;
+  font-size: 1.35rem;
+  padding: 5px 0px;
   letter-spacing: 2px;
   word-spacing: 4px;
   font-weight: 900;
@@ -109,7 +113,7 @@ body .main_section .title h1 {
 body .main_section .main_div {
   background-color: whitesmoke;
   height: 100%;
-  padding: 0% 2%;
+  padding: 0% 1%;
 }
 
 body .main_section .main_div .navigation {
@@ -122,9 +126,9 @@ body .main_section .main_div .navigation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#00008b), color-stop(#2f0da7), color-stop(#4e1cc4), color-stop(#6c2be1), to(#8939ff));
-  background-image: linear-gradient(to right top, #00008b, #2f0da7, #4e1cc4, #6c2be1, #8939ff);
-  height: 6vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00008b), color-stop(#2f0da7), color-stop(#4e1cc4), color-stop(#6c2be1), to(#8939ff));
+  background-image: linear-gradient(to top, #00008b, #2f0da7, #4e1cc4, #6c2be1, #8939ff);
+  height: 5.5vh;
 }
 
 body .main_section .main_div .navigation li {
@@ -139,21 +143,22 @@ body .main_section .main_div .navigation li {
           justify-content: space-evenly;
 }
 
-body .main_section .main_div .navigation li ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 body .main_section .main_div .navigation li ul a {
   text-decoration: none;
   background-color: white;
   color: darkblue;
   padding: 1px 10px;
-  font-size: 1.2rem;
-  margin: 0px 40px;
+  font-size: 0.95rem;
+  margin: 0px 25px;
   font-weight: 700;
   border-radius: 15px;
+}
+
+body .main_section .main_div .navigation li ul a:hover {
+  background-color: #2f0da7;
+  color: whitesmoke;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body .main_section .main_div .navigation li ul #current_link {
@@ -223,11 +228,11 @@ body .main_section .main_div .workspace {
 
 body .main_section .main_div .workspace .left {
   margin-top: 15px;
-  width: 90%;
+  width: 100%;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications {
-  margin: 0% 6%;
+  margin: 0% 3%;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type {
@@ -242,7 +247,7 @@ body .main_section .main_div .workspace .left .circuit_specifications .choose_ci
   background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
   -webkit-box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
           box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
-  padding: 5px 20px;
+  padding: 5px 8%;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choose_sentence {
@@ -251,20 +256,33 @@ body .main_section .main_div .workspace .left .circuit_specifications .choose_ci
       align-self: center;
 }
 
+body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choose_sentence h3 {
+  font-size: 0.95rem;
+}
+
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choices_of_circuits h3 {
+  font-size: 14px;
   padding: 5px 0px;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choices_of_circuits h3 a {
+  font-size: 14px;
   color: whitesmoke;
   text-decoration: none;
   padding: 2px 8px;
   border-radius: 15px;
-  background-color: #474545;
+  background-color: #150f83;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choices_of_circuits h3 a:hover {
+  padding: 2px 8.5px;
+  background-color: rgba(21, 15, 131, 0.6);
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choices_of_circuits h3 .selected_currently {
-  background-color: #135713;
+  background-color: rgba(21, 15, 131, 0.75);
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .circuit_design {
@@ -278,7 +296,7 @@ body .main_section .main_div .workspace .left .circuit_specifications .circuit_d
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings {
-  width: 48%;
+  width: 43%;
   border-radius: 17px;
   background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
   -webkit-box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
@@ -344,7 +362,9 @@ body .main_section .main_div .workspace .left .circuit_specifications .circuit_d
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .check_design {
-  width: 48%;
+  font-size: 0.85rem;
+  font-weight: 500;
+  width: 53%;
   text-align: center;
   border-radius: 17px;
   background: linear-gradient(145deg, #d2d2d2, #b0b0b0);

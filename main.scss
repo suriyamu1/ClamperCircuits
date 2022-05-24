@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +21,10 @@ body {
 
         .college_logo_name {
             // background-color: black;
-            width: 27%;
+            width: 30%;
             height: 100%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: left;
             align-items: center;
 
             img {
@@ -32,24 +35,25 @@ body {
                 //College name
                 font-weight: 700;
                 margin-left: 5px;
-                font-size: 1.15rem;
+                font-size: 1rem;
             }
         }
         
         .heading_virtual_labs {
             h1 {
-                font-size: 2rem;
+                font-size: 1.3rem;
                 letter-spacing: 1.5px;
                 word-spacing: 3px;
             }
             
         }
         .nav_links {
-            width: 27%;
+            width: 30%;
+
             li {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 align-items: center;
     
     
@@ -60,14 +64,15 @@ body {
                     a {
                         text-decoration: none;
                         color: white;
-                        padding: 5px 10px;
+                        padding: 5px 8px;
                         // Gradients from EGG GRADIENT WEBSITE
                         background-color: #2a2a72;
                         background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
                         letter-spacing: 1px;
-                        font-weight: 900;
-
+                        font-weight: 600;
+                        font-size: 0.95rem;
                         border-radius: 15px;
+                        font-family: 'Crimson Pro', serif;
                     }
                 }
             }
@@ -77,16 +82,16 @@ body {
 
     .main_section {
         height: 89vh;
-        max-height: 88vh; 
-        overflow: hidden;
+        min-height: 90vh; 
+        // overflow: hidden;
 
         .title {
             background-color: whitesmoke;
             text-align: center;
             
             h1 {
-                font-size: 1.5rem;
-                padding: 7px 0px;
+                font-size: 1.35rem;
+                padding: 5px 0px;
                 letter-spacing: 2px;
                 word-spacing: 4px;
                 font-weight: 900;
@@ -98,15 +103,15 @@ body {
         .main_div {
             background-color: whitesmoke;
             height: 100%;
-            padding: 0% 2%;
+            padding: 0% 1%;
 
 
             .navigation {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-image: linear-gradient(to right top, #00008b, #2f0da7, #4e1cc4, #6c2be1, #8939ff);
-                height: 6vh;     
+                background-image: linear-gradient(to top, #00008b, #2f0da7, #4e1cc4, #6c2be1, #8939ff);
+                height: 5.5vh;     
                 
                 li {
                     display: flex;
@@ -115,17 +120,23 @@ body {
                     
 
                     ul {
-                        align-items: center;
+                        // align-items: center;
                         a {
                             text-decoration: none;
                             // text-transform: uppercase;
                             background-color: white;
                             color: darkblue;
                             padding: 1px 10px;
-                            font-size: 1.2rem;
-                            margin: 0px 40px;
+                            font-size: 0.95rem;
+                            margin: 0px 25px;
                             font-weight: 700;
                             border-radius: 15px;
+
+                            &:hover {
+                                background-color: #2f0da7;
+                                color: whitesmoke;
+                                transition: 0.3s ease all;
+                            }
                         }
 
                         #current_link {
@@ -184,10 +195,10 @@ body {
                     // border: 1px solid black;
                     margin-top: 15px;
                     // height: 100%;
-                    width: 90%;
+                    width: 100%;
 
                     .circuit_specifications {
-                        margin: 0% 6%;
+                        margin: 0% 3%;
                         .choose_circuit_type {
                             font-size: 0.9rem;
                             display: flex;
@@ -197,26 +208,42 @@ body {
                             background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
                             box-shadow:  7px 7px 12px #666666,
                              -7px -7px 12px #ffffff;
-                            padding: 5px 20px;
+                            padding: 5px 8%;
     
                             .choose_sentence {
                                 align-self: center;
+                                
+
+                                h3 {
+                                    font-size: 0.95rem;
+                                }
                             }
     
                             .choices_of_circuits {
                                 h3 {
+                                    font-size: 14px;
                                     padding: 5px 0px;
     
                                     a {
+                                        font-size: 14px;
                                         color: whitesmoke;
                                         text-decoration: none;
                                         padding: 2px 8px;
                                         border-radius: 15px;
-                                        background-color: rgb(71, 69, 69);
+                                        background-color: rgb(21, 15, 131);
+
+                                        &:hover {
+                                            padding: 2px 8.5px;
+                                            background-color: rgba(21,15,131,0.6);
+                                            transition: ease 0.2s;
+                                        
+                                        }
                                     }
+                                    
 
                                     .selected_currently {
-                                        background-color: rgb(19, 87, 19);
+                                        background-color: rgba(21,15,131,0.75);
+                                        
                                     }
                                 }
                             }
@@ -228,7 +255,7 @@ body {
                             margin-top: 3%;
     
                             .choose_ratings {
-                                width: 48%;
+                                width: 43%;
                                 // border: 1px solid black;
                                 border-radius: 17px;
                                 background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
@@ -289,7 +316,9 @@ body {
                             }
     
                             .check_design {
-                                width: 48%;
+                                font-size: 0.85rem;
+                                font-weight: 500;
+                                width: 53%;
                                 // border: 1px solid black;
                                 text-align: center;
                                 // vertical-align: middle;

@@ -64,12 +64,82 @@ function validate()
 {
     console.log("validate function is called.");
     var input_v_value = document.getElementById("V_in").value;
-    var  bias_v_value = document.getElementById("bias_v").value;
-    var res_val = document.getElementById("resistance").value;
+    // var  bias_v_value = document.getElementById("bias_v").value;
+    var res_val = document.getElementById("resistance_value").value;
 
 
 
-    if(input_v_value.value == "" || bias_v_value == "" || res_val == "") {
+    // if(input_v_value.value == "" || bias_v_value == "" || res_val == "") {
+    //     document.getElementById("check_design").innerHTML = "<h5>Fill all the entries.</h5>"; 
+    // }
+
+    if(input_v_value == "" || res_val == "") {
         document.getElementById("check_design").innerHTML = "<h5>Fill all the entries.</h5>"; 
+        return;
     }
+
+    if(input_v_value < 0 || res_val < 0) {
+        document.getElementById("check_design").innerHTML = "<h5>Values cannot be negative. </h5>"; 
+        return;
+    }
+
+    // Verifying if correct diode is chosen
+    if(input_v_value > 335.875) {
+        document.getElementById("check_design").innerHTML = "<h5>Peak voltage = (Rms voltage)/1.414.<br>The peak output voltage will be 2 times peak voltage. The diodes we have can withstand PIV upto 1000V. Hence, taking 2*Vm = 950V. ==> Vm = 475V ==> Vrms = 335.875V. Vin rms < 335.875V </h5>"
+    }
+
+    else {
+        document.getElementById("check_design").innerHTML = "<h5>Input voltage chosen is correct.</h5>"
+        var diode_name = document.getElementById("diode_name").value;
+        console.log(diode_name);
+
+        if(input_v_value > 268.7) {
+            if(diode_name == "6A10") {
+                document.getElementById("check_design").innerHTML = "<h5>Diode is chosen correctly</h5>"
+            }
+            else {
+                document.getElementById("check_design").innerHTML = "<h5>Diode is not chosen correctly</h5>";
+                return;
+            }
+        }
+        else if(input_v_value > 134.35) {
+            if(diode_name == "6A10" || diode_name == "6A8") {
+                document.getElementById("check_design").innerHTML = "<h5>Diode is chosen correctly</h5>"
+            }
+            else {
+                document.getElementById("check_design").innerHTML = "<h5>Diode is not chosen correctly</h5>";
+                return;
+            }
+        }
+
+        else if(input_v_value > 33.58) {
+            if(diode_name == "1n4004" || diode_name == "6A10" || diode_name == "6A8") {
+                document.getElementById("check_design").innerHTML = "<h5>Diode is chosen correctly</h5>"
+            }
+            else {
+                document.getElementById("check_design").innerHTML = "<h5>Diode is not chosen correctly</h5>";
+                return;
+            }
+        }
+        else {
+            document.getElementById("check_design").innerHTML = "<h5>Diode is chosen correctly</h5>"
+        }
+    }
+
+    var capacitance = document.getElementById("cap_value").value;
+    if(res_val == 500) {
+        console.log("Res is 500");
+        if(capacitance=="470 uF") {
+            document.getElementById("check_design").innerHTML = "<h5>Cap is chosen correctly</h5>";
+        }
+        else {
+            document.getElementById("check_design").innerHTML = "<h5>Cap is not chosen correctly</h5>";
+        }
+    }
+    else {
+        if(res_val == 1000) {
+            document.getElementById("check_design").innerHTML = "<h5>Cap is chosen correctly</h5>";
+        }
+    }
+
 }

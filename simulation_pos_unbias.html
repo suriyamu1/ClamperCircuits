@@ -58,8 +58,9 @@
                                 <h3>Choose the type of clamper: </h3>
                             </div>
                             <div class="choices_of_circuits">
-                                <h3><a href="#">Biased Clamper</a>&nbsp; or &nbsp;<a href="#" class="selected_currently">Unbiased Clamper</a></h3>
+                                <h3><a href="#">Biased Clamper</a>&nbsp;&nbsp;&nbsp; or &nbsp;<a href="#" class="selected_currently">Unbiased Clamper</a></h3>
                                 <h3><a href="#" class="selected_currently">Positive Clamper</a>&nbsp; or &nbsp;<a href="#">Negative Clamper</a></h3>
+                                <h3><a href="#" class="selected_currently">Positive reference</a> or &nbsp;<a href="#">Negative reference</a></h3>
                             </div>
                         </div>
 
@@ -74,28 +75,33 @@
                                 <form>
                                     <div class="inputs_from_user">
                                         <label>Input Voltage (rms):</label>
-                                        <input type="number" id="V_in">
+                                        <input type="number" id="V_in" min="0" max="500">
                                         <br>
     
-                                        <label>Biasing Voltage (dc):</label>
+                                        <!-- <label>Biasing Voltage (dc):</label>
                                         <input type="number" name="" id="bias_v" size="4">
-                                        <br>
+                                        <br> -->
     
                                         <label>Diode:</label>
-                                        <select>
-                                            <option>1n4007</option>
-                                            <option>Power</option>
+                                        <select id="diode_name">
+                                            <option>1n4002</option>
+                                            <option>1n4004</option>
+                                            <option>6A8</option>
+                                            <option>6A10</option>
                                         </select>
                                         <br>
     
                                         <label>Resistor:</label>
-                                        <input type="number" id="resistance">
+                                        <select id="resistance_value">
+                                            <option>500</option>
+                                            <option>1000</option>
+                                        </select>
                                         <br>
     
                                         <label>Capacitor:</label>
-                                        <select>
-                                            <option>0.1 uF</option>
-                                            <option>0.3 pF</option>
+                                        <select id="cap_value">
+                                            <option>470 uF</option>
+                                            <option>220 uF</option>
                                         </select>
                                         <br>
                                     </div>
@@ -115,7 +121,7 @@
                     </div>
                     
 
-                    
+
 
                     <div class="circuit_diagram">
                         <div class="diagram" id="diagram">
@@ -161,9 +167,9 @@
             
         </div>
     </section>
-    <footer>
+    <!-- <footer>
 
-    </footer>
+    </footer> -->
     <script src="app.js"></script>
 </body>
 </html>
