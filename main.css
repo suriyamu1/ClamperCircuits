@@ -282,7 +282,11 @@ body .main_section .main_div .workspace .left .circuit_specifications .choose_ci
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choices_of_circuits h3 .selected_currently {
-  background-color: rgba(21, 15, 131, 0.75);
+  background-color: rgba(76, 75, 108, 0.75);
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choices_of_circuits h3 .selected_currently:hover {
+  background-color: rgba(76, 75, 108, 0.75);
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .circuit_design {
@@ -420,6 +424,10 @@ body .main_section .main_div .workspace .left .circuit_diagram .three_buttons .n
 body .main_section .main_div .workspace .right {
   border-left: 1px solid gray;
   width: 100%;
+}
+
+body .main_section .main_div .workspace .right h6 {
+  color: gray;
 }
 
 body .main_section .main_div .workspace .right .output_dashboard {

@@ -85,7 +85,8 @@ function validate()
 
     // Verifying if correct diode is chosen
     if(input_v_value > 335.875) {
-        document.getElementById("check_design").innerHTML = "<h5>Peak voltage = (Rms voltage)/1.414.<br>The peak output voltage will be 2 times peak voltage. The diodes we have can withstand PIV upto 1000V. Hence, taking 2*Vm = 950V. ==> Vm = 475V ==> Vrms = 335.875V. Vin rms < 335.875V </h5>"
+        document.getElementById("check_design").innerHTML = "<h5>Peak voltage = (Rms voltage)/1.414.<br>The peak output voltage will be 2 times peak voltage. The diodes we have can withstand PIV upto 1000V. Hence, taking 2*Vm = 950V. ==> Vm = 475V ==> Vrms = 335.875V. Vin rms < 335.875V </h5>";
+        return;
     }
 
     else {
@@ -95,6 +96,7 @@ function validate()
 
         if(input_v_value > 268.7) {
             if(diode_name == "6A10") {
+                console.log("input voltage larger than 268");
                 document.getElementById("check_design").innerHTML = "<h5>Diode is chosen correctly</h5>"
             }
             else {
