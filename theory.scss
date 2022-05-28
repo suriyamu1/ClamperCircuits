@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    .main_section {
+        .theory_container {
+            background-image: linear-gradient(to left bottom, #5fb2fb, #74bef8, #8bc9f5, #a3d4f2, #bcdef0, #b7daf0, #b2d6ef, #aed2ef, #97bcf0, #90a4ec, #9a87e0, #ac64c9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding-bottom: 5%;
+
+            //common styling for all div elements (glassmorphism)
+            .container1, .container2, .container3 {
+                margin: 2% 0%;
+                display: flex;
+                flex-direction: column;
+                width: 75%;
+                padding: 2% 5%;
+                //Glassmorphism
+                background: rgba( 255, 255, 255, 0.4 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 3.5px );
+                -webkit-backdrop-filter: blur( 3.5px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+                h1 {
+                    font-size: 1.5rem;
+                    margin-bottom: 5px;
+                    color: #00008b;
+                    letter-spacing: 0.5px;
+                }
+            }
+            .container1 {
+                ul {
+                    // border: 1px solid black;
+                    margin: 0% 10%;
+                    line-height: 2rem;
+                    
+                    li {
+                        p {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .container2 {
+
+                h3 {
+                    text-indent: 60px;
+                    font-size: 1.12rem;
+                    font-weight: 600;
+                }
+
+                table {
+                    margin: 2% 0%;
+                    width: 100%;
+                    border-spacing: 0px;  //to remove gap between cells
+
+                    th, td {
+                        border: 1px solid black;
+                        padding: 10px;
+                        text-align: center; 
+                        vertical-align: middle;
+                    }
+
+                    th {
+                        height: 60px;
+                        background-color: #2d2dfb;
+                        color: whitesmoke;
+                        font-size: 19px;
+                        font-weight: 700;
+                    }
+
+                    tr:nth-child(even) {
+                        background-image: linear-gradient(to right top, #90b6ef, #9cc5ef, #aed2ee, #c4dfee, #deeaef);
+                    }
+                }
+            }
+
+            .container3 {
+
+            }
+        }
+    }
+}

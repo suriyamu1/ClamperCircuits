@@ -167,57 +167,6 @@ body .main_section .main_div .navigation li ul #current_link {
   padding: 3px 10px;
 }
 
-body .main_section .main_div .aim_main_container {
-  height: 100%;
-  background-color: #c4c4c4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body .main_section .main_div .aim_main_container .aim_text {
-  border: 1px black solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-body .main_section .main_div .aim_main_container .aim_text li ol {
-  list-style: lower-roman;
-}
-
-body .main_section .main_div .aim_main_container .target_audience_text {
-  border: 1px black solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body .main_section .main_div .aim_main_container .target_audience_text li ol {
-  list-style: lower-roman;
-}
-
 body .main_section .main_div .workspace {
   display: -webkit-box;
   display: -ms-flexbox;

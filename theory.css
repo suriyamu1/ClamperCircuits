@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+body .main_section .theory_container {
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#5fb2fb), color-stop(#74bef8), color-stop(#8bc9f5), color-stop(#a3d4f2), color-stop(#bcdef0), color-stop(#b7daf0), color-stop(#b2d6ef), color-stop(#aed2ef), color-stop(#97bcf0), color-stop(#90a4ec), color-stop(#9a87e0), to(#ac64c9));
+  background-image: linear-gradient(to left bottom, #5fb2fb, #74bef8, #8bc9f5, #a3d4f2, #bcdef0, #b7daf0, #b2d6ef, #aed2ef, #97bcf0, #90a4ec, #9a87e0, #ac64c9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 5%;
+}
+
+body .main_section .theory_container .container1, body .main_section .theory_container .container2, body .main_section .theory_container .container3 {
+  margin: 2% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75%;
+  padding: 2% 5%;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+body .main_section .theory_container .container1 h1, body .main_section .theory_container .container2 h1, body .main_section .theory_container .container3 h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #00008b;
+  letter-spacing: 0.5px;
+}
+
+body .main_section .theory_container .container1 ul {
+  margin: 0% 10%;
+  line-height: 2rem;
+}
+
+body .main_section .theory_container .container1 ul li p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+body .main_section .theory_container .container2 h3 {
+  text-indent: 60px;
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+body .main_section .theory_container .container2 table {
+  margin: 2% 0%;
+  width: 100%;
+  border-spacing: 0px;
+}
+
+body .main_section .theory_container .container2 table th, body .main_section .theory_container .container2 table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+body .main_section .theory_container .container2 table th {
+  height: 60px;
+  background-color: #2d2dfb;
+  color: whitesmoke;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+body .main_section .theory_container .container2 table tr:nth-child(even) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#90b6ef), color-stop(#9cc5ef), color-stop(#aed2ee), color-stop(#c4dfee), to(#deeaef));
+  background-image: linear-gradient(to right top, #90b6ef, #9cc5ef, #aed2ee, #c4dfee, #deeaef);
+}
+/*# sourceMappingURL=theory.css.map */

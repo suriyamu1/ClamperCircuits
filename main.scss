@@ -101,6 +101,7 @@ body {
         }
 
         .main_div {
+            // border: 1px solid black;
             background-color: whitesmoke;
             height: 100%;
             padding: 0% 1%;
@@ -148,42 +149,7 @@ body {
                 }
             }
 
-            // in aim.html page
-            .aim_main_container {
-                height: 100%;
-                background-color: #c4c4c4;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                .aim_text {
-                    border: 1px black solid;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-
-                    li {
-                        ol {
-                            list-style: lower-roman;
-                        }
-                    }
-                }
-
-                .target_audience_text {
-                    border: 1px black solid;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    li {
-                        ol {
-                            list-style: lower-roman;
-                        }
-                    }
-                }
-
-            }
+            
             .workspace {
                 display: flex;
                 height: 100%;

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="theory.css">
+    <title>Clamper Circuits - Theory</title>
+</head>
+
+<body>
+    <header>
+        <div class="college_logo_name">
+            <img src="TCE_logo.png" alt="Logo" height="50px">
+            <h2>Thiagarajar College of Engineering</h2>
+        </div>
+        
+        <div class="heading_virtual_labs">
+            <h1>EEE Virtual Lab</h1>
+        </div>
+
+        <div class="nav_links">
+            <li>
+                <ul><a href="#">Home</a></ul>
+                <ul><a href="#">About TCE</a></ul>
+                <ul><a href="#">Contact</a></ul>
+                <ul><a href="#">Login</a></ul>
+            </li>
+        </div>
+        
+    </header>
+
+    <section class="main_section">
+        <div class="title">
+            <h1>
+                Study of Clamper Circuits
+            </h1>
+        </div>
+        <div class="main_div">
+            <div class="navigation">
+                <li>
+                    <ul><a href="index.html">Aim</a></ul>
+                    <ul><a href="#"  id="current_link">Theory</a></ul>
+                    <ul><a href="#">Pre-Quiz</a></ul>
+                    <ul><a href="#">Circuit Design</a></ul>
+                    <ul><a href="1_simulation_pos_unbias.html">Simulation</a></ul>
+                    <ul><a href="#">Post-Quiz</a></ul>
+                    <ul><a href="#">Applications</a></ul>
+                    <ul><a href="#">Feedback</a></ul>
+                </li>
+            </div>
+
+            <div class="theory_container">
+                <div class="container1">
+                    
+
+                    <h1>What is a clamper?</h1>
+                    <ul>
+                        <li><p>Clampers are electronic circuits that shift the DC level of the input signal to the desired level.</p></li>
+                        <li><p>It is also known as a level shifter.</p></li>
+                        <li><p>It consists of a capacitor, diode, DC voltage source (battery) and a load resistor.</p></li>
+                    </ul>
+                </div>
+
+                <div class="container2">
+                    <h1>Types of Clamper circuits</h1>
+                    <h3>There are six types of clampers based on the DC level shift provided to the input signal.</h3>
+
+                    <table>
+                        <tr>
+                            <th style="width: 5%"></th>
+                            <th style="width: 15%">Type</th>
+                            <th class="ckt_diag">Circuit Diagram</th>
+                            <th>Output waveform</th>
+                            <th style="width: 20%">Output Voltage</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><h4>Positive unbiased clamper</h4></td>
+                            <td><img src="images/Pos_unbiased_clamper/Circuit_pics/Slide1.JPG" alt="" height="120px"></td>
+                            <td><img src="images/Pos_unbiased_clamper/Graph_pics/Slide6.JPG" alt="" height="120px"></td>
+                            <td><h4>V<sub>o</sub> = V<sub>in</sub> + V<sub>b</sub></h4></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><h4>Negative unbiased clamper</h4></td>
+                            <td><img src="images/Pos_unbiased_clamper/Circuit_pics/Slide1.JPG" alt="" height="120px"></td>
+                            <td><img src="images/Pos_unbiased_clamper/Graph_pics/Slide6.JPG" alt="" height="120px"></td>
+                            <td><h4>V<sub>o</sub> = V<sub>in</sub> + V<sub>b</sub></h4></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><h4>Positive biased clamper with positive reference</h4></td>
+                            <td><img src="images/Pos_unbiased_clamper/Circuit_pics/Slide1.JPG" alt="" height="120px"></td>
+                            <td><img src="images/Pos_unbiased_clamper/Graph_pics/Slide6.JPG" alt="" height="120px"></td>
+                            <td><h4>V<sub>o</sub> = V<sub>in</sub> + V<sub>b</sub></h4></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><h4>Positive biased clamper with negative reference</h4></td>
+                            <td><img src="images/Pos_unbiased_clamper/Circuit_pics/Slide1.JPG" alt="" height="120px"></td>
+                            <td><img src="images/Pos_unbiased_clamper/Graph_pics/Slide6.JPG" alt="" height="120px"></td>
+                            <td><h4>V<sub>o</sub> = V<sub>in</sub> + V<sub>b</sub></h4></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td><h4>Negative biased clamper with positive reference</h4></td>
+                            <td><img src="images/Pos_unbiased_clamper/Circuit_pics/Slide1.JPG" alt="" height="120px"></td>
+                            <td><img src="images/Pos_unbiased_clamper/Graph_pics/Slide6.JPG" alt="" height="120px"></td>
+                            <td><h4>V<sub>o</sub> = V<sub>in</sub> + V<sub>b</sub></h4></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><h4>Negative biased clamper with negative reference</h4></td>
+                            <td><img src="images/Pos_unbiased_clamper/Circuit_pics/Slide1.JPG" alt="" height="120px"></td>
+                            <td><img src="images/Pos_unbiased_clamper/Graph_pics/Slide6.JPG" alt="" height="120px"></td>
+                            <td><h4>V<sub>o</sub> = V<sub>in</sub> + V<sub>b</sub></h4></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="container3">
+                    <h1>Components used in Clampers</h1>
+                    <div class="1diode">
+                        jnewfew
+                    </div>
+                    <div class="2capacitor">
+                        frrfrf
+                    </div>
+                    <div class="3resistor">
+                        kefe
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
