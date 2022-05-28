@@ -306,6 +306,18 @@ body .main_section .main_div .workspace .left .circuit_specifications .circuit_d
   -webkit-box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
           box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
   padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings h3 {
@@ -366,16 +378,57 @@ body .main_section .main_div .workspace .left .circuit_specifications .circuit_d
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .check_design {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
   width: 53%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border-radius: 17px;
   background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
   -webkit-box-shadow: 7px 7px 12px #666666,-7px -7px 12px #ffffff;
           box-shadow: 7px 7px 12px #666666,-7px -7px 12px #ffffff;
   padding: 10px 15px;
-  color: green;
+  color: black;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .check_design h5 {
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .check_design h5 .correct {
+  color: #126812;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .check_design h5 .error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .check_design h5 sub {
+  font-size: 0.9rem;
+}
+
+body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .check_design .acknowledgement {
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: green;
+  padding: 2px 5px;
+  color: whitesmoke;
 }
 
 body .main_section .main_div .workspace .left .circuit_diagram {
@@ -458,32 +511,6 @@ body .main_section .main_div .workspace .right .output_dashboard .dashboard_name
   word-spacing: 3px;
 }
 
-body .main_section .main_div .workspace .right .output_dashboard .output_voltage_display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  color: black;
-  padding-bottom: 4%;
-}
-
-body .main_section .main_div .workspace .right .output_dashboard .output_voltage_display .avg_v span {
-  color: blue;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-}
-
-body .main_section .main_div .workspace .right .output_dashboard .output_voltage_display .rms_v span {
-  color: blue;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-}
-
 body .main_section .main_div .workspace .right .output_dashboard .output_waveform {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,6 +528,19 @@ body .main_section .main_div .workspace .right .output_dashboard .output_wavefor
 
 body .main_section .main_div .workspace .right .output_dashboard .output_waveform img {
   height: 30vh;
+}
+
+body .main_section .main_div .workspace .right .output_dashboard .values_in_graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.9rem;
 }
 
 body .main_section .main_div .workspace .right .explanation {

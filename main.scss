@@ -265,6 +265,10 @@ body {
                                 box-shadow:  7px 7px 12px #666666,
                                  -7px -7px 12px #ffffff;
                                 padding: 10px 15px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-around;
     
                                 h3 {
                                     color: #000;
@@ -319,19 +323,53 @@ body {
                             }
     
                             .check_design {
-                                font-size: 0.85rem;
+
+                                font-size: 0.8rem;
                                 font-weight: 500;
                                 width: 53%;
-                                // border: 1px solid black;
                                 text-align: center;
-                                // vertical-align: middle;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-around;
                                 border-radius: 17px;
                                 //neomporphism
                                 background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
                                 box-shadow:  7px 7px 12px #666666,-7px -7px 12px #ffffff;
                             
                                 padding: 10px 15px;
-                                color: green;
+                                color: black;
+
+                                h5 {
+                                    text-align: justify;
+                                    font-size: 0.9rem;
+                                    font-weight: 800;
+
+                                    .correct{
+                                        color: rgb(18, 104, 18);
+                                        font-size: 0.9rem;
+                                        font-weight: 900;
+                                    }
+
+                                    .error {
+                                        color: red;
+                                        font-size: 0.9rem;
+                                    }
+
+                                    sub {
+                                        font-size: 0.9rem;
+                                    }
+                                }
+
+                                .acknowledgement {
+                                    border: 1px solid black ;
+                                    border-radius: 15px;
+                                    background-color: green;
+                                    padding: 2px 5px;
+                                    color: whitesmoke;
+                                }
+
+                                
                             }
                         }
                     }
@@ -415,37 +453,6 @@ body {
                             }
                         }
 
-                        .output_voltage_display {
-
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-evenly;
-                            // background-color: #00008b;
-                            color: black;
-                            padding-bottom: 4%;
-                            // border: 1.5px solid gray;
-
-                            .avg_v {
-                                // border: 1px solid black;
-
-                                span {
-                                    color: blue;
-                                    font-weight: 800;
-                                    letter-spacing: 0.5px;
-                                }
-                            }
-
-                            .rms_v {
-                                // border: 1px solid black;
-
-                                span {
-                                    color: blue;
-                                    font-weight: 800;
-                                    letter-spacing: 0.5px;
-                                }
-                            }
-                        }
-
                         .output_waveform {
                             display: flex;
                             flex-direction: column;
@@ -456,6 +463,13 @@ body {
                             img {
                                 height: 30vh;
                             }
+                        }
+
+                        .values_in_graph {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            font-size: 0.9rem;
                         }
                     }
 

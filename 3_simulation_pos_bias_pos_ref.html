@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Clamper Circuits - Simulation</title>
+</head>
+<body>
+    <header>
+        <div class="college_logo_name">
+            <img src="TCE_logo.png" alt="Logo" height="50px">
+            <h2>Thiagarajar College of Engineering</h2>
+        </div>
+        
+        <div class="heading_virtual_labs">
+            <h1>EEE Virtual Lab</h1>
+        </div>
+
+        <div class="nav_links">
+            <li>
+                <ul><a href="#">Home</a></ul>
+                <ul><a href="#">About TCE</a></ul>
+                <ul><a href="#">Contact</a></ul>
+                <ul><a href="#">Login</a></ul>
+            </li>
+        </div>
+        
+    </header>
+
+    <section class="main_section">
+        <div class="title">
+            <h1>
+                Study of Clamper Circuits
+            </h1>
+        </div>
+        <div class="main_div">
+            <div class="navigation">
+                <li>
+                    <ul><a href="index.html">Aim</a></ul>
+                    <ul><a href="#">Theory</a></ul>
+                    <ul><a href="#">Pre-Quiz</a></ul>
+                    <ul><a href="#">Circuit Design</a></ul>
+                    <ul><a href="simulation_pos_unbias.html" id="current_link">Simulation</a></ul>
+                    <ul><a href="#">Post-Quiz</a></ul>
+                    <ul><a href="#">Applications</a></ul>
+                    <ul><a href="#">Feedback</a></ul>
+                </li>
+            </div>
+
+            <div class="workspace">
+                <div class="left">
+                    
+                    <div class="circuit_specifications">
+                        <div class="choose_circuit_type">
+                            <div class="choose_sentence">
+                                <h3>Choose the type of clamper: </h3>
+                            </div>
+                            <div class="choices_of_circuits">
+                                <h3><a href="#" class="selected_currently">Biased&nbsp;Clamper</a>&nbsp;&nbsp; or &nbsp;<a href="1_simulation_pos_unbias.html">Unbiased Clamper</a></h3>
+                                <h3><a href="#" class="selected_currently">Positive Clamper</a>&nbsp; or &nbsp;<a href="5_simulation_neg_bias_pos_ref.html">Negative Clamper</a></h3>
+                                <h3><a href="#" class="selected_currently">Positive reference</a> or &nbsp;<a href="4_simulation_pos_bias_neg_ref.html">Negative reference</a></h3>
+                            </div>
+                        </div>
+
+                        <div class="circuit_design">
+                            <div class="choose_ratings">
+                                <h3>Choose Components and Ratings:</h3>
+                                <!-- <h4>Diode</h4>
+                                <h4>Capacitor</h4>
+                                <h4>Resistor</h4>
+                                <h4>Supply voltage</h4>
+                                <h4>Bias Voltage: </h4> -->
+                                <form>
+                                    <div class="inputs_from_user">
+                                        <label>Input Voltage (rms):</label>
+                                        <input type="number" id="V_in" min="0">
+                                        <br>
+    
+                                        <!-- <label>Biasing Voltage (dc):</label>
+                                        <input type="number" name="" id="bias_v" size="4">
+                                        <br> -->
+    
+                                        <label>Diode:</label>
+                                        <select id="diode_name">
+                                            <option>1n4002</option>
+                                            <option>1n4004</option>
+                                            <option>6A8</option>
+                                            <option>6A10</option>
+                                        </select>
+                                        <br>
+    
+                                        <label>Resistor:</label>
+                                        <select id="resistance_value">
+                                            <option>500</option>
+                                            <option>1000</option>
+                                        </select>
+                                        <br>
+    
+                                        <label>Capacitor:</label>
+                                        <select id="cap_value">
+                                            <option>470 uF</option>
+                                            <option>220 uF</option>
+                                        </select>
+                                        <br>
+                                    </div>
+                                    
+                                    <div class="buttonsDiv">
+                                        <button type="reset">Reset</button>
+                                        <button type="button" onclick="validate()">Verify</button>
+                                    </div>
+                                    
+
+                                </form>
+                            </div>
+                            <div class="check_design" id="check_design">
+                                <h5>After choosing components and their ratings, click "Verify Button" to verify your circuit design.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                    <div class="circuit_diagram">
+                        <div class="diagram" id="diagram">
+                            <img src="images/biased_pos_clamper_pos_ref.JPG" alt="">
+
+                        </div>
+                        <div class="three_buttons">
+                            <button class="reset btn" onclick="resetToOne()">Reset</button>
+                            <button class="prev btn" onclick="decrementStep()">Prev.</button>
+                            <button class="next btn" id="next_btn" onclick="incrementStep()">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    
+                    <div class="output_dashboard">
+                        <h6 id="count">1</h6>
+
+                        <div class="dashboard_name">
+                            <h2>Output Waveform</h2>
+                        </div>
+                        
+                        <div class="output_waveform">
+                            <img src="images/biased_pos_clamper_pos_ref.JPG" alt="" id="output_graph">
+                        </div>
+
+                        <div class="values_in_graph">
+                            <div class="v_p">
+                                <h4>Peak Voltage (Vp) = <span id="v_peak">5V</span></h4>
+                            </div>
+                            <div class="bias_v">
+                                <h4>Bias voltage (Vdc) = <span id="v_bias">10V</span></h4>
+                            </div>
+                            <div class="frequency">
+                                <h4>Frequency = <span id="freq">50Hz</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="explanation" id="explanation">
+                        <h2>Click "Next" button is begin! </h2>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- <footer>
+
+    </footer> -->
+    <script src="pos_unbias.js"></script>
+</body>
+</html>
