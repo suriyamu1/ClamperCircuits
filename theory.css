@@ -92,4 +92,61 @@ body .main_section .theory_container .container2 table tr:nth-child(even) {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#90b6ef), color-stop(#9cc5ef), color-stop(#aed2ee), color-stop(#c4dfee), to(#deeaef));
   background-image: linear-gradient(to right top, #90b6ef, #9cc5ef, #aed2ee, #c4dfee, #deeaef);
 }
+
+body .main_section .theory_container .container3 .diode, body .main_section .theory_container .container3 .capacitor, body .main_section .theory_container .container3 .resistor {
+  margin-top: 20px;
+  border: 1px solid black;
+  background: rgba(25, 20, 232, 0.05);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1% 1%;
+}
+
+body .main_section .theory_container .container3 .diode h3, body .main_section .theory_container .container3 .capacitor h3, body .main_section .theory_container .container3 .resistor h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: blue;
+  font-weight: 900;
+}
+
+body .main_section .theory_container .container3 .diode ul, body .main_section .theory_container .container3 .capacitor ul, body .main_section .theory_container .container3 .resistor ul {
+  margin: 0% 7%;
+}
+
+body .main_section .theory_container .container3 .diode ul li p, body .main_section .theory_container .container3 .capacitor ul li p, body .main_section .theory_container .container3 .resistor ul li p {
+  font-weight: 600;
+}
+
+body .main_section .theory_container .container3 .diode ul li p sub, body .main_section .theory_container .container3 .capacitor ul li p sub, body .main_section .theory_container .container3 .resistor ul li p sub {
+  font-size: 14px;
+}
+
+body .main_section .theory_container .container3 .diode .spec_table, body .main_section .theory_container .container3 .capacitor .spec_table, body .main_section .theory_container .container3 .resistor .spec_table {
+  margin: 3% 7%;
+}
+
+body .main_section .theory_container .container3 .diode .spec_table table, body .main_section .theory_container .container3 .capacitor .spec_table table, body .main_section .theory_container .container3 .resistor .spec_table table {
+  margin: 3% 3%;
+  width: 94%;
+  border-spacing: 0px;
+}
+
+body .main_section .theory_container .container3 .diode .spec_table table th, body .main_section .theory_container .container3 .diode .spec_table table td, body .main_section .theory_container .container3 .capacitor .spec_table table th, body .main_section .theory_container .container3 .capacitor .spec_table table td, body .main_section .theory_container .container3 .resistor .spec_table table th, body .main_section .theory_container .container3 .resistor .spec_table table td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+body .main_section .theory_container .container3 .diode .spec_table table th, body .main_section .theory_container .container3 .capacitor .spec_table table th, body .main_section .theory_container .container3 .resistor .spec_table table th {
+  height: 25px;
+  background-color: #2d2dfb;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 700;
+}
 /*# sourceMappingURL=theory.css.map */
