@@ -93,6 +93,10 @@ body .main_section .theory_container .container2 table tr:nth-child(even) {
   background-image: linear-gradient(to right top, #90b6ef, #9cc5ef, #aed2ee, #c4dfee, #deeaef);
 }
 
+body .main_section .theory_container .container3 {
+  padding-bottom: 4%;
+}
+
 body .main_section .theory_container .container3 .diode, body .main_section .theory_container .container3 .capacitor, body .main_section .theory_container .container3 .resistor {
   margin-top: 20px;
   border: 1px solid black;
@@ -103,7 +107,7 @@ body .main_section .theory_container .container3 .diode, body .main_section .the
   -webkit-backdrop-filter: blur(2px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 1% 1%;
+  padding: 1% 1% 2% 1%;
 }
 
 body .main_section .theory_container .container3 .diode h3, body .main_section .theory_container .container3 .capacitor h3, body .main_section .theory_container .container3 .resistor h3 {
