@@ -78,16 +78,16 @@ body .main_div .sub_container a {
   font-size: 1.3rem;
   font-weight: 900;
   border-radius: 40px;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#1e0e74), color-stop(#00459f), color-stop(#0072bc), color-stop(#009ed0), to(#61c8e0));
-  background-image: linear-gradient(to left top, #1e0e74, #00459f, #0072bc, #009ed0, #61c8e0);
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#00008b), color-stop(#0045b5), color-stop(#0074cc), color-stop(#009fd7), to(#61c8e0));
+  background-image: linear-gradient(to left top, #00008b, #0045b5, #0074cc, #009fd7, #61c8e0);
   color: whitesmoke;
 }
 
 body .main_div .sub_container a:hover {
   padding: 22px 44px;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#1e0e74), color-stop(#00459f), color-stop(#0072bc), color-stop(#009ed0), to(#61c8e0));
-  background-image: linear-gradient(to right top, #1e0e74, #00459f, #0072bc, #009ed0, #61c8e0);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#00008b), color-stop(#0045b5), color-stop(#0074cc), color-stop(#009fd7), to(#61c8e0));
+  background-image: linear-gradient(to right top, #00008b, #0045b5, #0074cc, #009fd7, #61c8e0);
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
-/*# sourceMappingURL=aim.css.map */
+/*# sourceMappingURL=aim_and_feedback.css.map */

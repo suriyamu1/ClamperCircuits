@@ -82,7 +82,7 @@ body header .nav_links li ul a {
   color: white;
   padding: 5px 8px;
   background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  background-image: linear-gradient(315deg, #2a2a72 0%, #0352ff 74%);
   letter-spacing: 1px;
   font-weight: 600;
   font-size: 0.95rem;
@@ -172,7 +172,8 @@ body .main_section .main_div .workspace {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  background-color: #c4c4c4;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#5fb2fb), color-stop(#74bef8), color-stop(#8bc9f5), color-stop(#a3d4f2), color-stop(#bcdef0), color-stop(#b7daf0), color-stop(#b2d6ef), color-stop(#aed2ef), color-stop(#97bcf0), color-stop(#90a4ec), color-stop(#9a87e0), to(#ac64c9));
+  background-image: linear-gradient(to left bottom, #5fb2fb, #74bef8, #8bc9f5, #a3d4f2, #bcdef0, #b7daf0, #b2d6ef, #aed2ef, #97bcf0, #90a4ec, #9a87e0, #ac64c9);
 }
 
 body .main_section .main_div .workspace .left {
@@ -184,6 +185,17 @@ body .main_section .main_div .workspace .left .circuit_specifications {
   margin: 0% 3%;
 }
 
+body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type, body .main_section .main_div .workspace .left .circuit_specifications .choose_ratings, body .main_section .main_div .workspace .left .circuit_specifications .check_design {
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1% 0%;
+}
+
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type {
   font-size: 0.9rem;
   display: -webkit-box;
@@ -192,11 +204,6 @@ body .main_section .main_div .workspace .left .circuit_specifications .choose_ci
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  border-radius: 17px;
-  background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
-  -webkit-box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
-          box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
-  padding: 5px 8%;
 }
 
 body .main_section .main_div .workspace .left .circuit_specifications .choose_circuit_type .choose_sentence {
@@ -250,10 +257,6 @@ body .main_section .main_div .workspace .left .circuit_specifications .circuit_d
 
 body .main_section .main_div .workspace .left .circuit_specifications .circuit_design .choose_ratings {
   width: 43%;
-  border-radius: 17px;
-  background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
-  -webkit-box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
-          box-shadow: 7px 7px 12px #666666, -7px -7px 12px #ffffff;
   padding: 10px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,9 +347,6 @@ body .main_section .main_div .workspace .left .circuit_specifications .circuit_d
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 17px;
-  background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
-  -webkit-box-shadow: 7px 7px 12px #666666,-7px -7px 12px #ffffff;
-          box-shadow: 7px 7px 12px #666666,-7px -7px 12px #ffffff;
   padding: 10px 15px;
   color: black;
 }
@@ -429,7 +429,17 @@ body .main_section .main_div .workspace .right {
 }
 
 body .main_section .main_div .workspace .right h6 {
-  color: gray;
+  color: transparent;
+}
+
+body .main_section .main_div .workspace .right .output_dashboard, body .main_section .main_div .workspace .right .explanation {
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 body .main_section .main_div .workspace .right .output_dashboard {
@@ -442,10 +452,6 @@ body .main_section .main_div .workspace .right .output_dashboard {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
-  -webkit-box-shadow: 7px 7px 12px #666666,-7px -7px 12px #ffffff;
-          box-shadow: 7px 7px 12px #666666,-7px -7px 12px #ffffff;
-  border-radius: 20px;
 }
 
 body .main_section .main_div .workspace .right .output_dashboard .dashboard_name {
@@ -499,10 +505,6 @@ body .main_section .main_div .workspace .right .explanation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: linear-gradient(145deg, #d2d2d2, #b0b0b0);
-  -webkit-box-shadow: 7px 7px 12px #666666,-7px -7px 12px #ffffff;
-          box-shadow: 7px 7px 12px #666666,-7px -7px 12px #ffffff;
-  border-radius: 20px;
 }
 
 body .main_section .main_div .workspace .right .explanation h2 {

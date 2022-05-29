@@ -38,6 +38,19 @@ body {
                     letter-spacing: 0.5px;
                 }
 
+                // in feedback page
+                .thankyou {
+                    font-size: 3rem;
+                    text-align: center;
+                }
+
+                // in feedback page
+                h3 {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+
                 ul {
                     // border: 1px solid black;
                     margin: 0% 10%;
@@ -49,6 +62,24 @@ body {
                             font-weight: 600;
                         }
                     }
+                }
+            }
+
+            // link in feedback page
+            a {
+                // border: 1px solid black;
+                padding: 20px 40px;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: 900;
+                border-radius: 40px;
+                background-image: linear-gradient(to left top, #00008b, #0045b5, #0074cc, #009fd7, #61c8e0);
+                color: whitesmoke;
+
+                &:hover {
+                    padding: 22px 44px;
+                    background-image: linear-gradient(to right top, #00008b, #0045b5, #0074cc, #009fd7, #61c8e0);
+                    transition: all ease-in-out 0.3s;
                 }
             }
         }
