@@ -68,7 +68,7 @@ function change_Circuit_Graph_Explanation() {
 
 // this function is used inside validate() function
 function getPIV(name_of_diode) {
-    if(name_of_diode == "1n4001")
+    if(name_of_diode == "1n4002")
         return 100;
     else if(name_of_diode == '1n4004')
         return 400;
