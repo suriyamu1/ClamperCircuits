@@ -18,8 +18,8 @@ body .main_section .circuit_design_content {
           flex-direction: column;
 }
 
-body .main_section .circuit_design_content .container1, body .main_section .circuit_design_content .container2, body .main_section .circuit_design_content .container3 {
-  margin: 2% 8%;
+body .main_section .circuit_design_content .container1, body .main_section .circuit_design_content .container2, body .main_section .circuit_design_content .container3, body .main_section .circuit_design_content .container4 {
+  margin: 2% 10%;
   padding-bottom: 60px;
   background: rgba(255, 255, 255, 0.4);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -30,7 +30,7 @@ body .main_section .circuit_design_content .container1, body .main_section .circ
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-body .main_section .circuit_design_content .container1 h1, body .main_section .circuit_design_content .container2 h1, body .main_section .circuit_design_content .container3 h1 {
+body .main_section .circuit_design_content .container1 h1, body .main_section .circuit_design_content .container2 h1, body .main_section .circuit_design_content .container3 h1, body .main_section .circuit_design_content .container4 h1 {
   text-align: center;
   color: #00008b;
   font-size: 1.5rem;
@@ -83,24 +83,82 @@ body .main_section .circuit_design_content .container1 .sub_container table th {
   font-weight: 700;
 }
 
-body .main_section .circuit_design_content .container3 {
-  padding: 30px 90px 50px 90px;
+body .main_section .circuit_design_content .container2 {
+  padding: 30px 50px;
 }
 
-body .main_section .circuit_design_content .container3 h3 {
+body .main_section .circuit_design_content .container2 table {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border: 1px solid black;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-spacing: 0px;
+}
+
+body .main_section .circuit_design_content .container2 table th {
+  background-color: #2d2dfb;
+  height: 30px;
+  color: whitesmoke;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+body .main_section .circuit_design_content .container2 table th, body .main_section .circuit_design_content .container2 table td {
+  border: 1px solid black;
+}
+
+body .main_section .circuit_design_content .container2 table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  font-weight: 600;
+}
+
+body .main_section .circuit_design_content .container2 .note {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+body .main_section .circuit_design_content .container2 .note h3 {
+  color: #00008b;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+body .main_section .circuit_design_content .container2 .note ul {
+  padding: 2% 5%;
+}
+
+body .main_section .circuit_design_content .container2 .note ul li {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body .main_section .circuit_design_content .container3, body .main_section .circuit_design_content .container4 {
+  padding: 2% 10%;
+}
+
+body .main_section .circuit_design_content .container3 h3, body .main_section .circuit_design_content .container4 h3 {
   text-align: left;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   color: #00008b;
 }
 
-body .main_section .circuit_design_content .container3 ul {
-  margin-bottom: 50px;
+body .main_section .circuit_design_content .container3 ul, body .main_section .circuit_design_content .container4 ul {
+  margin-bottom: 30px;
   margin-left: 70px;
 }
 
-body .main_section .circuit_design_content .container3 ul li {
+body .main_section .circuit_design_content .container3 ul li, body .main_section .circuit_design_content .container4 ul li {
   font-size: 16px;
   font-weight: 700;
+  line-height: 1.2rem;
+  word-spacing: 1px;
+}
+
+body .main_section .circuit_design_content .container4 {
+  margin-bottom: 70px;
 }
 /*# sourceMappingURL=circuit_design.css.map */

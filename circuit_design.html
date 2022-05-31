@@ -164,7 +164,7 @@
 
                         <table>
                             <tr>
-                                <th></th>
+                                <th style="width:5%"></th>
                                 <th>Charging of Capacitor</th>
                                 <th>Discharging of Capacitor</th>
                             </tr>
@@ -189,19 +189,22 @@
                             <tr>
                                 <td>4</td>
                                 <td><p>Time constant (&#964;) is the time required to charge a capacitor (C) through a resistor (R) from initial votlage value of zero to 63.2 % of applied DC voltage.</p></td>
-                                <td><p>Time constant ((&#964;)) is the time required to discharge a capacitor (C) through the same resistor to approximately 36.8% (100% - 63.2%) of the initial voltage</p></td>
+                                <td><p>Time constant (&#964;) is the time required to discharge a capacitor (C) through the same resistor to approximately 36.8% (100% - 63.2%) of the initial voltage</p></td>
                             </tr>
                             
                         </table>
-                        <h3>Note:</h3>
-                        <ul>
-                            <li>It takes approximately 5 time constants (5(&#964;) for a capacitor to charge from zero to applied voltage or discharge from initial value to zero.</li>
-                            <li>During charging and discharging, the voltage polarity of capacitor remains the same but the current polarity reverses.</li>
-                        </ul>
+                        <div class="note">
+                            <h3>Note:</h3>
+                            <ul>
+                                <li>During charging and discharging, the voltage polarity of capacitor remains the same but the current polarity reverses.</li>
+                                <li>It takes approximately 5 time constants (5&#964;) for a capacitor to charge from zero to applied voltage or discharge from initial value to zero.</li>
+                            </ul>
+                        </div>
+                        
                     </div>
                     <div class="container3">
                         <h1>Choosing Diode</h1>
-                        <h3>Diode must withstand the forward surge current (capacitor charging current)</h3>
+                        <h3>I. Diode must withstand the forward surge current (capacitor charging current)</h3>
                         <ul>
                             <li>Initially, the capacitor is uncharged.</li>
                             <li>The diode will be forward biased, only for a very short duration, when the input signal is fed to the circuit.</li>
@@ -210,13 +213,32 @@
                             <li>Since there will be very little resistance (say, R &#8773; 0.1&#8486;) in this short circuit path, time constant (&#964; = R*C) is very negligible, in the order of &#181;s. Hence the capacitor charges very quickly (in the order of &#181;s)</li>
                         </ul>
 
-                        <h3>Diode must withstand the voltage applied across it</h3>
+                        <h3>II. Diode must withstand the voltage applied across it</h3>
                         <ul>
                             <li>Once the capacitor is charged, the voltage across diode (V<sub>AK</sub> ) is always negative. So, the diode will hereafter remain reverse biased.</li>
                             <li>The voltage across the load resistor (output voltage), appears across the reverse biased diode.</li>
                             <li>The diode must be able to withstand this output voltage.</li>
                             <li>The maximum value of output voltage must be lesser than the PIV (Peak Inverse Voltage) of the diode specified in the diode's datasheet</li>
                         </ul>
+                    </div>
+
+                    <div class="container4">
+                        <h1>Choosing Capacitance and Resistance</h1>
+                        <h3>I. Capacitance must charge very quickly and discharge very slowly.</h3>
+                        <ul>
+                            <li>The capacitor will be charged via short circuit path produced by forward biased diode. This happens within one half cycle since short circuit current is very large and time constant in short circuit path is very negligible.</li>
+                            <li>In the steady state operation of clamper circuit, diode will always be reverse biased. So, the capacitor tries to discharge through load resistor.</li>
+                            <li>But, in order to get the desired output, the capacitor should not discharge when input is applied to the circuit.</li>
+                            <li>So, the time constant (R*C) is designed such that, Time constant >= Time period of the input.</li>
+                            <li>In our virtual lab, the input signal is assumed to have 50Hz frequency. Hence time period is 20 ms. So, time constant must be atleast 200 ms to make sure the capacitor doesn't discharge.</li>
+                        </ul>
+
+                        <h3>II. Capacitor must be able to store V<sub>peak</sub> voltage without damage.</h3>
+                        <ul>
+                            <li>The operating voltage of the capacitor must be higher than the peak value of the input voltage.</li>
+                        </ul>
+
+                        <h3>III. Resistor should have correct current and power ratings.</h3>
                     </div>
                 </div>
             </div>

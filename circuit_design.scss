@@ -12,10 +12,10 @@ body {
             display: flex;
             flex-direction: column;
 
-            .container1, .container2, .container3 {
+            .container1, .container2, .container3, .container4 {
 
                 // border: 1px solid black;
-                margin: 2% 8%;
+                margin: 2% 10%;
                 padding-bottom: 60px;
 
                 //glassmorphism
@@ -71,26 +71,83 @@ body {
                 }
             }
 
-            .container3 {
+            .container2 {
+                padding: 30px 50px;
+
+                table {
+                    margin-top: 50px;
+                    margin-bottom: 40px;
+                    border: 1px solid black;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    border-spacing: 0px;
+
+                    th {
+                        background-color: #2d2dfb;
+                        height: 30px;
+                        color: whitesmoke;
+                        font-size: 17px;
+                        font-weight: 700;
+                    }
+
+                    th, td {
+                        border: 1px solid black;
+                    }
+
+                    td {
+                        text-align: center;
+                        vertical-align: middle;
+                        padding: 5px;
+                        font-weight: 600;
+                    }
+                }
+
+                .note {
+                    margin-left: 10%;
+                    margin-right: 10%;
+
+                    h3 {
+                        color: #00008b;
+                        font-weight: 800;
+                        font-size: 18px;
+                    }
+
+                    ul {
+                        padding: 2% 5%;
+
+                        li {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .container3, .container4 {
                 // border: 1px solid black;
-                padding: 30px 90px 50px 90px;
+                padding: 2% 10%;
 
                 h3 {
                     text-align: left;
                     font-size: 1.2rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.25rem;
                     color: #00008b;
                 }
 
                 ul {
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
                     margin-left: 70px;
 
                     li {
                         font-size: 16px;
                         font-weight: 700;
+                        line-height: 1.2rem;
+                        word-spacing: 1px;
                     }
                 }
+            }
+
+            .container4 {
+                margin-bottom: 70px;
             }
 
         }
