@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="circuit_design.css">
+        <title>Clamper Circuits - Circuit Design</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="college_logo_name">
+                <img src="TCE_logo.png" alt="Logo" height="50px">
+                <h2>Thiagarajar College of Engineering</h2>
+            </div>
+            
+            <div class="heading_virtual_labs">
+                <h1>EEE Virtual Lab</h1>
+            </div>
+
+            <div class="nav_links">
+                <li>
+                    <ul><a href="#">Home</a></ul>
+                    <ul><a href="#">About TCE</a></ul>
+                    <ul><a href="#">Contact</a></ul>
+                    <ul><a href="#">Login</a></ul>
+                </li>
+            </div>
+            
+        </header>
+
+        <section class="main_section">
+            <div class="title">
+                <h1>
+                    Study of Clamper Circuits
+                </h1>
+            </div>
+            <div class="main_div">
+                <div class="navigation">
+                    <li>
+                        <ul><a href="index.html">Aim</a></ul>
+                        <ul><a href="theory.html">Theory</a></ul>
+                        <ul><a href="quiz_files/pre_quiz.html" target="_blank">Pre-Quiz</a></ul>
+                        <ul><a href="#" id="current_link">Circuit Design</a></ul>
+                        <ul><a href="1_simulation_pos_unbias.html">Simulation</a></ul>
+                        <ul><a href="quiz_files/post_quiz.html" target="_blank">Post-Quiz</a></ul>
+                        <ul><a href="#">Applications</a></ul>
+                        <ul><a href="feedback.html">Feedback</a></ul>
+                    </li>
+                </div>
+                <div class="circuit_design_content">
+                    <div class="container1">
+                        <h1>Available Components</h1>
+                        <div class="sub_container">
+                            <h3>1. Diode</h3>
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th>Diode Name</th>
+                                    <th>PIV</th>
+                                    <th>V<sub>f</sub></th>
+                                    <th>I<sub>f max</sub></th>
+                                    <th>I<sub>s max</sub></th>
+                                    <th>Datasheet</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1n4002</td>
+                                    <td>100 V</td>
+                                    <td>1.0 V</td>
+                                    <td>1.0 A</td>
+                                    <td>30 A for 8.3ms</td>
+                                    <td><a href="pdf_files/1n4001_1n4007.pdf" target="_blank">1n4001</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>1n4004</td>
+                                    <td>400 V</td>
+                                    <td>1.0 V</td>
+                                    <td>1.0 A</td>
+                                    <td>30 A for 8.3ms</td>
+                                    <td><a href="pdf_files/1n4001_1n4007.pdf" target="_blank">1n4007</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td>6A8</td>
+                                    <td>800 V</td>
+                                    <td>0.9 V</td>
+                                    <td>6.0 A</td>
+                                    <td>400 A for 8.3ms</td>
+                                    <td><a href="pdf_files/6A05_6A10.pdf" target="_blank">6A8</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td>6A10</td>
+                                    <td>1000 V</td>
+                                    <td>0.9 V</td>
+                                    <td>6.0 A</td>
+                                    <td>400 A for 8.3ms</td>
+                                    <td><a href="pdf_files/6A05_6A10.pdf" target="_blank">6A10</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+
+                        <div class="sub_container">
+                            <h3>2. Resistor</h3>
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th>Resistance</th>
+                                    <th>Current Rating</th>
+                                    <th>Tolerance</th>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>500 &#8486;</td>
+                                    <td>5 A</td>
+                                    <td>2 %</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>1000 &#8486;</td>
+                                    <td>5 A</td>
+                                    <td>2 %</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+
+                        <div class="sub_container">
+                            <h3>3. Capacitor</h3>
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th>Capacitance</th>
+                                    <th>Operating voltage</th>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>220 &#181;F</td>
+                                    <td>1200 V</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>470 &#181;F</td>
+                                    <td>1200 V</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="container2">
+                        <h1>Prerequisite Concept: Time Constant of RC circuit</h1> 
+
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>Charging of Capacitor</th>
+                                <th>Discharging of Capacitor</th>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td><img src="images/time_constant/capacitor_charging_ckt.JPG" alt="" height="200px"></td>
+                                <td><img src="images/time_constant/capacitor_discharging_ckt.JPG" alt="" height="200px"></td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td><p>During charging, current enters the capacitor through the positive terminal.</p></td>
+                                <td><p>During discharging, current leaves the capacitor through the negative terminal.</p></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="images/time_constant/capacitor_charging_graph.JPG" alt="" height="200px"></td>
+                                <td><img src="images/time_constant/capacitor_discharging_graph.JPG" alt="" height="200px"></td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td><p>Time constant (&#964;) is the time required to charge a capacitor (C) through a resistor (R) from initial votlage value of zero to 63.2 % of applied DC voltage.</p></td>
+                                <td><p>Time constant ((&#964;)) is the time required to discharge a capacitor (C) through the same resistor to approximately 36.8% (100% - 63.2%) of the initial voltage</p></td>
+                            </tr>
+                            
+                        </table>
+                        <h3>Note:</h3>
+                        <ul>
+                            <li>It takes approximately 5 time constants (5(&#964;) for a capacitor to charge from zero to applied voltage or discharge from initial value to zero.</li>
+                            <li>During charging and discharging, the voltage polarity of capacitor remains the same but the current polarity reverses.</li>
+                        </ul>
+                    </div>
+                    <div class="container3">
+                        <h1>Choosing Diode</h1>
+                        <h3>Diode must withstand the forward surge current (capacitor charging current)</h3>
+                        <ul>
+                            <li>Initially, the capacitor is uncharged.</li>
+                            <li>The diode will be forward biased, only for a very short duration, when the input signal is fed to the circuit.</li>
+                            <li>Through this forward biased diode (acts as short circuit path), a large current flows and the capacitor gets charged very quickly.</li>
+                            <li>The capacitor charging current is an exponentially decaying current which dies out in approximately 5*&#964;</li>
+                            <li>Since there will be very little resistance (say, R &#8773; 0.1&#8486;) in this short circuit path, time constant (&#964; = R*C) is very negligible, in the order of &#181;s. Hence the capacitor charges very quickly (in the order of &#181;s)</li>
+                        </ul>
+
+                        <h3>Diode must withstand the voltage applied across it</h3>
+                        <ul>
+                            <li>Once the capacitor is charged, the voltage across diode (V<sub>AK</sub> ) is always negative. So, the diode will hereafter remain reverse biased.</li>
+                            <li>The voltage across the load resistor (output voltage), appears across the reverse biased diode.</li>
+                            <li>The diode must be able to withstand this output voltage.</li>
+                            <li>The maximum value of output voltage must be lesser than the PIV (Peak Inverse Voltage) of the diode specified in the diode's datasheet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

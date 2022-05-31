@@ -114,6 +114,11 @@ function validate()
         return;
     }
 
+    if(input_v_value == 0) {
+        document.getElementById("check_design").innerHTML = '<h5 class="error">Input voltage cannot be zero.</h5>';
+        return;
+    }
+
     // this is done to get the peak value with 1 decimal precision. Else we get upto 10 decimal precision which is not needed.
     vpeak_value = Math.trunc(input_v_value*Math.sqrt(2)) +"."+ Math.trunc(input_v_value*10*Math.sqrt(2))%10;
     console.log(vpeak_value);
