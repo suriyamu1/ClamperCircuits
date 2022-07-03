@@ -359,26 +359,45 @@ body {
                         }
 
                         .three_buttons {
+                            padding-top: 15px;
+                            padding-bottom: 10px;
                             .btn {
-                                padding: 2px 10px;
+                                padding: 4px 25px;
                                 border-radius: 15px;
                                 margin: 0px 10px;
-                                font-weight: 600;
+                                font-weight: 500;
                                 color: whitesmoke;
+                                border: 0px;
+
+                                
                                 
                             }
 
                             .reset {
-                                background-color: #D61B0C;
+                                background-image: linear-gradient(to right, #d01212, #dd3b13, #e95616, #f46e1c, #ff8524);
+
+                                &:hover {
+                                    background-image: linear-gradient(to right, #d01212, #d01212, #d01212, #d01212, #d01212);
+                                    transition: all ease-in-out 0.5s;
+                                }
                             }
 
                             .prev {
-                                background-color: rgb(22, 68, 4);
-                                // color: ;
+                                background-image: linear-gradient(to right, #2c7013, #2d8714, #2c9f15, #25b717, #12d01a);
+
+                                &:hover {
+                                    background-image: linear-gradient(to right, #2c7013, #2c7013, #2c7013, #2c7013, #2c7013);
+                                    transition: all ease-in-out 0.5s;
+                                }
                             }
 
                             .next {
-                                background-color:rgb(22, 68, 4);
+                                background-image: linear-gradient(to right, #2c7013, #2d8714, #2c9f15, #25b717, #12d01a);
+
+                                &:hover {
+                                    background-image: linear-gradient(to right, #2c7013, #2c7013, #2c7013, #2c7013, #2c7013);
+                                    transition: all ease-in-out 0.5s;
+                                }
                             }
                         }
 
